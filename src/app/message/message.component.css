@@ -1,0 +1,153 @@
+.container {
+  padding: 1.5rem;
+  overflow-y: scroll;
+  height: 100%;
+  max-height: 499px;
+  background-color: rgba(100, 100, 100, 0.3);
+}
+.profileCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 3rem;
+}
+.leftProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.leftProfile .profileImg {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.leftProfile .profileImg img {
+  width: 90%;
+  object-fit: contain;
+}
+.leftProfile p,
+h4 {
+  margin: 0%;
+}
+.leftProfile h4 {
+  font-weight: 500;
+}
+.profileImg {
+  margin-right: 0.5rem;
+}
+.msgCont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.msgCont img {
+  width: 100%;
+  max-width: 400px;
+}
+.para {
+  margin-top: 30px;
+}
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: rgb(71, 71, 72);
+  width: 10px;
+}
+.imgCont {
+  height: 250px;
+  width: 400px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.imgCont img {
+  width: 90%;
+  object-fit: contain;
+  height: 90%;
+}
+.cont header {
+  padding-left: 2rem;
+  font-weight: 500;
+  border-bottom: 0.5px solid rgba(71, 71, 72, 0.582);
+  margin: 0%;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.cont header span {
+  font-size: 10px;
+  background-color: rgba(100, 100, 100, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  padding-left: 7px;
+  justify-content: flex-start;
+  margin-left: 7px;
+  text-transform: capitalize;
+}
+.cont header span mat-icon {
+  font-size: 11px;
+  display: flex;
+  margin: 0;
+  padding: 0%;
+  align-items: center;
+  justify-content: center;
+  height: 2px;
+  width: 17px;
+}
+.cont header h1 {
+  margin: 0%;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.name .nameanMail {
+  display: flex;
+}
+.name .nameanMail a {
+  margin-left: 2px;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.671);
+}
+.name .nameanMail p {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.name .to {
+  background-color: rgba(100, 100, 100, 0.3);
+  padding: 0px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 10px;
+  padding-right: 0px;
+}
+.name .to p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rightProfile {
+  font-size: 11px;
+  color: rgb(71, 71, 72);
+}
+.rightProfile span {
+  margin-right: 0.5rem;
+}

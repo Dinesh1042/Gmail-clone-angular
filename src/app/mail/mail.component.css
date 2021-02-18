@@ -1,0 +1,46 @@
+.container {
+  background-color: rgb(47, 47, 47);
+  color: #fff;
+}
+.container nav {
+  display: flex;
+  align-items: center;
+}
+.container nav > a {
+  display: flex;
+  align-items: center;
+  padding: 0.9rem;
+  width: 100%;
+  max-width: 253px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.container nav > a p {
+  margin: 0;
+  font-size: 14px;
+}
+.container a .icon mat-icon {
+  font-size: 20px;
+}
+.container a .icon {
+  padding: 0 10px;
+}
+.container a:hover {
+  background-color: rgb(71, 71, 72);
+}
+a.active::after {
+  height: 3px;
+  width: 90%;
+  background-color: #fff;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-radius: 99px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+a.active {
+  background-color: rgb(71, 71, 72);
+}

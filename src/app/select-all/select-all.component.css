@@ -1,0 +1,128 @@
+.container {
+  padding: 5px 10px;
+  background-color: rgb(17, 17, 17);
+  width: 100%;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 0.5px solid rgba(202, 202, 202, 0.192);
+}
+.container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .dropdown .drop {
+  height: 3px;
+  width: 3px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  cursor: pointer;
+}
+.container .dropdown .drop::after,
+.container .dropdown .drop::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+}
+.container .dropdown .drop::after {
+  top: -6px;
+}
+.container .dropdown .drop::before {
+  bottom: -6px;
+}
+.navLeft > div,
+.navLeft label,
+.left > div {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.navLeft > div:hover,
+.navLeft label:hover,
+.left > div:hover {
+  background-color: rgba(141, 141, 141, 0.363);
+}
+
+.navLeft .box {
+  /* content: ""; */
+  height: 18px;
+  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid rgba(141, 141, 141, 0.363);
+  border-radius: 1px;
+  /* position: absolute; */
+}
+.box::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+.navLeft .checkBox input {
+  visibility: hidden;
+  position: absolute;
+}
+.navLeft .checkBox input:checked ~ .box::after {
+  background: url("../../assets/icon-check.png") center no-repeat,
+    rgba(141, 141, 141, 0.363);
+}
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navRight .para {
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.navRight p {
+  margin: 0%;
+  font-size: 13px;
+}
+button mat-icon {
+  opacity: 0.87;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+.navRight .para:hover {
+  background-color: rgba(141, 141, 141, 0.363);
+}
+.navRight button {
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.navRight button:hover {
+  background-color: rgba(141, 141, 141, 0.363);
+}
+.left {
+  display: flex;
+}

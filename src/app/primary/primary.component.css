@@ -1,0 +1,161 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #030303;
+  padding-right: 1rem;
+  color: #fff;
+  padding-left: 0%;
+  user-select: none;
+  max-height: 43px;
+  cursor: pointer;
+}
+.container {
+  background-color: #030303;
+}
+.centerCont {
+  display: flex;
+  max-width: 700px;
+  align-items: center;
+  justify-content: flex-start;
+  outline: none;
+  overflow: hidden;
+  padding: 0.8rem 0;
+}
+.centerCont p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+.centerCont span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(255, 255, 255, 0.527);
+}
+.leftCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftCont p {
+  margin: 0%;
+}
+
+.leftCont .box::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.leftCont .box {
+  height: 15px;
+  width: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+.leftCont .checkBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.3rem;
+}
+.leftCont .checkBox input {
+  position: absolute;
+  z-index: -11;
+  visibility: hidden;
+}
+.leftCont .checkBox input:checked ~ .box::after {
+  background: url("../../assets/icon-check.png") center no-repeat,
+    rgba(141, 141, 141, 0.363);
+  background-size: 80%;
+}
+mat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.reorder {
+  opacity: 0;
+  cursor: grab;
+}
+
+.message:hover {
+  background-color: rgba(88, 88, 88, 0.082) !important;
+}
+
+.message:hover .reorder {
+  opacity: 1;
+}
+.star {
+  margin: 0 0.5rem;
+}
+.name {
+  font-weight: 500;
+  width: 150px;
+}
+.container {
+  height: 459px;
+  overflow-y: scroll;
+}
+.container::-webkit-scrollbar {
+  width: 10px;
+  appearance: none;
+  background-color: rgb(47, 47, 47);
+}
+.container::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: rgba(141, 141, 141, 0.363);
+}
+.rightCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightCont p {
+  margin: 0;
+}
+.rightCont .icons {
+  display: flex;
+}
+.rightCont .icons button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  display: none;
+  margin: 0 2px;
+}
+.rightCont .icons button:hover {
+  background-color: rgb(71, 71, 72);
+}
+.message:hover .rightCont p {
+  display: none;
+}
+.message:hover .rightCont .icons button {
+  display: flex;
+}
+.leftCont a p {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.leftCont a {
+  text-decoration: none;
+  height: 100%;
+  padding: 0.8rem 0;
+}

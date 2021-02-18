@@ -1,0 +1,34 @@
+<app-select-all></app-select-all>
+<div class="container">
+  <div class="navCont">
+    <nav>
+      <a routerLink="/mail/primary" routerLinkActive="active">
+        <div class="icon">
+          <mat-icon>inbox</mat-icon>
+        </div>
+        <div class="para">
+          <p>Primary</p>
+        </div>
+      </a>
+      <!--  -->
+      <a routerLink="/mail/social" class="social" routerLinkActive="active">
+        <div class="icon">
+          <mat-icon>people</mat-icon>
+        </div>
+        <div class="para">
+          <p>Social</p>
+        </div>
+      </a>
+      <!--  -->
+      <a class="Promation" routerLinkActive="active">
+        <div class="icon">
+          <mat-icon>local_offer</mat-icon>
+        </div>
+        <div class="para">
+          <p>Promotions</p>
+        </div>
+      </a>
+    </nav>
+  </div>
+</div>
+<router-outlet></router-outlet>

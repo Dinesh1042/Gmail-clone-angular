@@ -1,0 +1,109 @@
+.navCont {
+  width: 100%;
+  background-color: rgb(17, 17, 17);
+  border-bottom: 0.5px solid rgba(202, 202, 202, 0.192);
+}
+.navCont nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.6rem;
+}
+nav .navLeft img {
+  padding: 0.4rem;
+  opacity: 0.87;
+  width: 120px;
+}
+nav .navLeft .menu {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+nav .navLeft .menu button {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .menu:hover {
+  background-color: rgba(141, 141, 141, 0.363);
+}
+.navLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.8;
+}
+.searchCont {
+  background-color: #474748;
+  width: 100%;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  margin-left: 5rem;
+}
+.searchCont .search {
+  display: flex;
+  align-items: center;
+}
+.searchCont .search input {
+  width: 100%;
+  padding: 0.95rem 0.75rem;
+  color: rgb(202, 202, 202);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+.searchIcon {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  margin-right: 0.2rem;
+}
+.searchIcon mat-icon {
+  font-size: 22px;
+  color: rgb(202, 202, 202);
+  margin-top: 3px;
+}
+.searchCont .search input::placeholder {
+  font-weight: 500;
+  color: rgb(202, 202, 202);
+}
+.navLeft a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+mat-icon {
+  opacity: 0.87 !important;
+}
+.rightNav button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  margin: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+nav button:hover,
+nav .navLeft button:hover {
+  background-color: rgba(141, 141, 141, 0.363);
+}

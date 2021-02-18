@@ -1,0 +1,39 @@
+<app-select-all [isMessageTab]="true"></app-select-all>
+<div class="container">
+  <div class="cont">
+    <header>
+      <h1>{{ mail.heroheading | titlecase }}</h1>
+      <span>inbox <mat-icon>clear</mat-icon></span>
+    </header>
+    <div class="profileCont">
+      <div class="leftProfile">
+        <div class="profileImg">
+          <img [src]="mail.userProfile" alt="" />
+        </div>
+        <div class="name">
+          <div class="nameanMail">
+            <p>{{ mail.name }}</p>
+            <a> <{{ mail.mailid }}></a>
+          </div>
+          <div class="to">
+            <p>to me <mat-icon>arrow_drop_down</mat-icon></p>
+          </div>
+        </div>
+      </div>
+      <div class="rightProfile">
+        <div class="time">
+          <span>{{ mail.time }} </span>{{ mail.date | date }}
+        </div>
+      </div>
+    </div>
+
+    <div class="msgCont">
+      <div class="imgCont">
+        <img [src]="mail.image" alt="" />
+      </div>
+      <div class="para">
+        <p>{{ mail.message }}</p>
+      </div>
+    </div>
+  </div>
+</div>

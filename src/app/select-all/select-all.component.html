@@ -1,0 +1,55 @@
+<div class="container">
+  <nav>
+    <div class="navLeft" *ngIf="!isMessageTab; else inMessage">
+      <label class="checkBox">
+        <input type="checkbox" checked />
+        <div class="box"></div>
+      </label>
+      <div class="retry">
+        <button>
+          <mat-icon>refresh</mat-icon>
+        </button>
+      </div>
+      <div class="dropdown">
+        <button>
+          <div class="drop"></div>
+        </button>
+      </div>
+    </div>
+    <ng-template #inMessage>
+      <div class="left">
+        <div class="retry">
+          <button (click)="back()">
+            <mat-icon>arrow_back</mat-icon>
+          </button>
+        </div>
+        <div class="dropdown">
+          <button>
+            <mat-icon>report</mat-icon>
+          </button>
+        </div>
+        <div class="trash">
+          <button>
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </div>
+    </ng-template>
+    <div class="navRight">
+      <div class="para">
+        <p *ngIf="!isMessageTab; else showId">
+          {{ 1 | number }} - {{ mails.length }} of {{ mails.length | number }}
+        </p>
+        <ng-template #showId>
+          <p>{{ id | number }} of {{ mails.length | number }}</p>
+        </ng-template>
+      </div>
+      <div class="keyboard">
+        <button>
+          <mat-icon>keyboard</mat-icon>
+          <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+      </div>
+    </div>
+  </nav>
+</div>

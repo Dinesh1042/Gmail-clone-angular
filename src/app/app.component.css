@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  height: 100%;
+}
+.middleContainer {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}

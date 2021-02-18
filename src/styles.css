@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: Nunito, Roboto, "Helvetica Neue", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}

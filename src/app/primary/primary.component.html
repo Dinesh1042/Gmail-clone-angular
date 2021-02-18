@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="messageCont">
+    <div
+      class="message"
+      *ngFor="let mail of mails"
+      [style.background]="mail.isRead ? 'rgb(3,3,3)' : 'rgb(48,48,48)'"
+    >
+      <div class="leftCont">
+        <div class="reorder">
+          <mat-icon>drag_indicator</mat-icon>
+        </div>
+        <label class="checkBox">
+          <input type="checkbox" />
+          <div class="box"></div>
+        </label>
+        <div class="star">
+          <mat-icon>star_outline</mat-icon>
+        </div>
+        <a routerLink="/message/{{ mail.id }}" class="name">
+          <p
+            [style.color]="mail.isRead ? 'rgba(255, 255, 255, 0.527)' : '#fff'"
+          >
+            {{ mail.name }}
+          </p>
+        </a>
+        <div class="centerCont" routerLink="/message/{{ mail.id }}">
+          <p
+            [style.color]="mail.isRead ? 'rgba(255, 255, 255, 0.827)' : '#fff'"
+          >
+            {{ mail.heroheading }}
+          </p>
+          <span>- {{ mail.message }}</span>
+        </div>
+      </div>
+      <div class="rightCont">
+        <p>{{ mail.date | date }}</p>
+        <div class="icons">
+          <button><mat-icon>archive</mat-icon></button>
+          <button><mat-icon>delete</mat-icon></button>
+          <button><mat-icon>mark_as_unread</mat-icon></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

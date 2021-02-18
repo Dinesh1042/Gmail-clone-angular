@@ -1,0 +1,152 @@
+.container {
+  background-color: rgb(17, 17, 17);
+
+  color: #fff;
+  padding: 1rem 0;
+  user-select: none;
+  height: 100%;
+}
+.composeCont {
+  display: flex;
+  color: #000;
+  margin-left: 10px;
+}
+.compose {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.5rem 0.95rem;
+  cursor: pointer;
+}
+.compose p {
+  margin: 0%;
+  padding: 0 0.55rem;
+  letter-spacing: 0.05rem;
+}
+
+.inCnt > div,
+.meet > div {
+  display: flex;
+  opacity: 0.87;
+  align-items: center;
+  padding: 5px 10px;
+  width: 98%;
+  outline: none;
+}
+.inCnt > div .para,
+.meet > div .para {
+  width: 190px;
+}
+.inCnt .icon,
+.meet .icon {
+  margin-left: 1rem;
+  position: relative;
+}
+.inCnt > div p,
+.inCnt section p,
+.meet > div p {
+  margin: 0%;
+  font-size: 14px;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+.inCnt > div mat-icon,
+.inCnt section mat-icon,
+.meet > div mat-icon {
+  font-size: 21px;
+  display: flex;
+}
+.inCnt > div:hover,
+.inCnt section .box:hover,
+.meet > div:hover {
+  background-color: rgba(141, 141, 141, 0.363);
+
+  border-radius: 0 99px 99px 0;
+  cursor: pointer;
+}
+.para {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.para .badge {
+  padding: 0 0.5rem;
+  border-radius: 999px;
+}
+
+.inCnt section > div {
+  display: flex;
+  opacity: 0.87;
+  align-items: center;
+  padding: 5px 10px;
+  width: 95%;
+}
+.inboxContainer {
+  height: 220px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(141, 141, 141, 0.363);
+}
+.inboxContainer::-webkit-scrollbar {
+  appearance: none;
+  width: 10px;
+  opacity: 0;
+}
+
+.inboxContainer:hover::-webkit-scrollbar-thumb {
+  width: 1px;
+  background-color: rgb(71, 71, 72);
+}
+.centerContainer header {
+  padding: 0.1rem 2rem;
+  padding-bottom: 0%;
+  padding-top: 1rem;
+}
+
+.container[data-isnavexpanded="false"] .para {
+  display: none;
+}
+
+.container[data-isnavexpanded="false"] .compose {
+  padding: 5px;
+}
+.container[data-isnavexpanded="false"] .compose p {
+  display: none;
+}
+.container[data-isnavexpanded="false"] .topContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.container[data-isnavexpanded="false"] .centerContainer header {
+  padding: 0%;
+  text-align: center;
+  margin-top: 15px;
+}
+.container[data-isnavexpanded="false"] .icon span {
+  position: absolute;
+  font-size: 9px;
+  background-color: rgb(71, 71, 72);
+  margin: 0;
+  padding: 0%;
+  padding: 0px 7px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -25%;
+  left: 10%;
+}
+div.active {
+  background-color: #369;
+  border-radius: 0 99px 99px 0;
+}
+.inboxContainer div.active:hover {
+  background-color: rgb(73, 130, 187);
+}

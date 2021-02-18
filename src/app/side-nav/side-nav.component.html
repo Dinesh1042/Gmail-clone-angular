@@ -1,0 +1,144 @@
+<div class="container" [attr.data-isNavExpanded]="isMenu">
+  <div class="topContainer">
+    <div class="composeCont">
+      <div class="compose">
+        <img src="../../assets/Add Gmail.png" alt="" />
+        <p>Compose</p>
+      </div>
+    </div>
+    <div class="inboxContainer">
+      <div class="inCnt">
+        <!--  -->
+        <div routerLink="mail/primary" class="inbox" routerLinkActive="active">
+          <div class="icon">
+            <mat-icon>inbox</mat-icon
+            ><span *ngIf="!isMenu">{{ getUnreadMail.length | number }}</span>
+          </div>
+          <div class="para">
+            <p>Inbox</p>
+            <div class="badge">
+              <span>{{ getUnreadMail.length | number }}</span>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="starred">
+          <div class="icon">
+            <mat-icon>star</mat-icon>
+          </div>
+          <div class="para">
+            <p>Starred</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="snoozed">
+          <div class="icon">
+            <mat-icon>watch_later</mat-icon>
+          </div>
+          <div class="para">
+            <p>Snoozed</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="send">
+          <div class="icon">
+            <mat-icon>send</mat-icon>
+          </div>
+          <div class="para">
+            <p>Send</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="draft">
+          <div class="icon">
+            <mat-icon>insert_drive_file</mat-icon>
+          </div>
+          <div class="para">
+            <p>Draft</p>
+            <div class="badge">
+              <span>{{ 55 | number }}</span>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="more" (click)="expand()">
+          <div class="icon">
+            <mat-icon *ngIf="!isExpanded; else expandLess"
+              >expand_more</mat-icon
+            >
+            <ng-template #expandLess>
+              <mat-icon>expand_less</mat-icon>
+            </ng-template>
+          </div>
+          <div class="para">
+            <p *ngIf="!isExpanded; else more">More</p>
+            <ng-template #more>
+              <p>Less</p>
+            </ng-template>
+          </div>
+        </div>
+        <section class="expand" *ngIf="isExpanded">
+          <!--  -->
+          <div class="draft" class="box">
+            <div class="icon">
+              <mat-icon>report</mat-icon>
+            </div>
+            <div class="para">
+              <p>Spam</p>
+              <div class="badge">
+                <span>{{ 100 | number }}</span>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="draft" class="box">
+            <div class="icon">
+              <mat-icon>label_important</mat-icon>
+            </div>
+            <div class="para">
+              <p>Important</p>
+              <div class="badge">
+                <span>{{ 108 | number }}</span>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="draft" class="box">
+            <div class="icon">
+              <mat-icon>delete</mat-icon>
+            </div>
+            <div class="para">
+              <p>Trash</p>
+            </div>
+          </div>
+        </section>
+
+        <!--  -->
+      </div>
+    </div>
+  </div>
+  <div class="centerContainer">
+    <div class="meet">
+      <header>
+        <p>Meet</p>
+      </header>
+      <div class="draft" class="box">
+        <div class="icon">
+          <mat-icon>videocam</mat-icon>
+        </div>
+        <div class="para">
+          <p>New Meeting</p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="draft" class="box">
+        <div class="icon">
+          <mat-icon>keyboard</mat-icon>
+        </div>
+        <div class="para">
+          <p>Join Meeting</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
